@@ -6,7 +6,7 @@
 	<title> my interests </title>
 	<link rel="stylesheet" href="interests.css">
 <style>
-     ul{
+    ul.breadcrumb{
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -14,11 +14,12 @@
         background-color: darkslateblue
     }
     
-    li{
+    ul.breadcrumb li{
         float:left;
     }
     
-    li a{
+
+    ul.breadcrumb li a{
         display: block;
         color: white;
         text-align:center;
@@ -26,26 +27,63 @@
         text-decoration: none;
     }
     
-    li a hover{
+    ul.breadcrumb li a hover{
         background-color: black;
     }
     </style>
+    
+<style>
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;    
+</style>
+
 </head>
 
 <body>
 	<h1>&spades; things i do when i'm bored. &spades; </h1>
     <p> can probably be used as a source of inspiration for what to do during quarantine, you're welcome </p>
 	
-    <ul>
-    <li><a href="art.html" target="_blank"> art </a></li> 
-    <li><a href="tv%20shows.html" target="_blank"> shows </a></li>    
-    <li><a href="reading.html" target="_blank"> books </a></li>
+<button onclick="myFunction()">dark mode switch</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+    
+    
+    <ul class="breadcrumb">
+    <li><a href="index.html">home</a></li>
+    <li><a href="art.html"> art </a></li> 
+    <li><a href="tv%20shows.html"> shows </a></li>    
+    <li><a href="reading.html"> books </a></li>
     </ul>
     
+    <p>Search website</p>
+    <form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
     <br>
     <br>
     
     <img src="bored.gif" alt="quarantine mood">
+
+
     
 </body>
 

@@ -5,40 +5,91 @@
 	<meta charset="UTF-8">
 	<title> art </title>
 	<link rel="stylesheet" href="art.css">
+    
+<style>
+    div.gallery{
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+        box-shadow: 10px 10px 5px grey
+    }
+    
+    div.gallery: hover{
+        border: 1px solid #777;
+    }
+    
+    div.gallery img{
+       width: 200px;
+        height: 200px;
+        
+    div.desc{
+        padding:15px
+        text-align:center;
+    }
+    }
+</style>
+<style>
+    ul.breadcrumb{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: darkslateblue
+    }
+    
+    ul.breadcrumb li{
+        float:left;
+    }
+ 
+    ul.breadcrumb li a{
+        display: block;
+        color: white;
+        text-align:center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    ul.breadcrumb li a hover{
+        background-color: black;
+    }
+    </style>
 </head>
 
 <body>
+    <h1>&spades; things i do when i'm bored. &spades; </h1>
+    <p> can probably be used as a source of inspiration for what to do during quarantine, you're welcome </p>
+<ul class="breadcrumb">
+    <li><a href="index.html">home</a></li>
+    <li><a href="art.html"> art </a></li> 
+    <li><a href="tv%20shows.html"> shows </a></li>    
+    <li><a href="reading.html"> books </a></li>
+    </ul>
+    
 	<h1> art </h1>
     <h3>some of my paintings across the years</h3>
 
-<table>
-<tr>
-    <th>painting</th>
-    <th>year it was drawn in</th>
-</tr>
-<tr>
-    <td>
-        <a href="https://www.nga.gov/collection/highlights/monet-the-japanese-footbridge.html" target="_blank"> <img src="japanese%20bridge.jpg" alt="Monet's Japanese Bridge" width="250" height="250"> </a>
-        <br>
-        <p>Click on painting to find out more about the original piece by Monet.</p>
-    </td>
-            
-    <td>2014</td>
-</tr>                                                                                  
-<tr>
-    <td><img src="purple%20sky.jpg" width="249" height="382"></td>
-    <td>2017</td>
-</tr>                                                                                    
-                                                                                     
-<tr>
-    <td><img src="houses%20in%20europe.jpg" width="375" height="280""></td>
-    <td>2018</td>
-</tr>
-<tr>
-    <td><img src="train.jpg" width="254" height="338"></td>
-    <td>2019</td>
-</tr>
-</table>
+<div class="gallery">
+        <a target="_blank" href="japanese%20bridge.jpg"> <img src="japanese%20bridge.jpg" alt="Monet's Japanese Bridge" width="250" height="250"> </a>
+    <div class="desc">painted in 2014, original piece by monet</div>
+</div>
+
+<div class="gallery">
+    
+    <a target="_blank" href="purple%20sky.jpg"><img src="purple%20sky.jpg" width="249" height="382"></a>
+    <div class="desc">painted in 2017</div>                         
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="houses%20in%20europe.jpg"><img src="houses%20in%20europe.jpg" width="375" height="280""></a>
+    <div class="desc">painted in 2018</div>
+</div>
+        
+<div class="gallery">
+        <a target="_blank" href="train.jpg"><img src="train.jpg" width="254" height="338"></a>
+        <div class="desc">painted in 2019</div>
+</div>
+
 
 </body>
 
